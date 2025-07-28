@@ -6,6 +6,10 @@ DocuMind AI – Semantic PDF & Heading Extractor is an advanced document intelli
 
 In this part it combines semantic search, heading detection, and structured output generation to help users — whether students, researchers, or professionals — extract meaningful content quickly based on a specified persona and job-to-be-done.
 ## 👤who it is for?
+- Students 
+- Professional
+- Researcher
+- Developers
 ## ✨ Key Capabilities
 - 🔍 Semantic Understanding — Automatically finds the most relevant section of each document by comparing content to user-defined tasks using a transformer-based model.
 
