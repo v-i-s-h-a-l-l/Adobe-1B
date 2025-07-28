@@ -22,7 +22,7 @@ In this part it combines semantic search, heading detection, and structured outp
 Whether you're filtering through academic papers, technical manuals, travel guides, or multilingual reports, DocuMind AI turns document overload into actionable insight.
 
 ## 🗺️ Roadmap
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/d65d8437-4bd9-4f9c-a2ee-75e3eb37e493" />
+<img width="410" height="724" alt="image" src="https://github.com/user-attachments/assets/e67de6b5-479b-4dd5-a496-d63b8c790a26" />
 
 - Accepts one or more document collections, where each collection includes:
 
@@ -84,8 +84,8 @@ Whether you're filtering through academic papers, technical manuals, travel guid
 - The highest-matching section(s) are selected based on similarity score.
 ### 📁 Folder Structure
   project-root/
-├── Collection_1/
-│ ├── PDFs/
+- ├── Collection_1/
+- │ ├── PDFs/
 │ ├── challenge1b_input.json
 │ └── challenge1b_output.json # (Auto-generated)
 ├── Collection_2/
@@ -107,19 +107,19 @@ Whether you're filtering through academic papers, technical manuals, travel guid
 
 ##  🛠️Setup instruction
 1. Clone the Repository
-`git clone https://github.com/your-username/your-repo-name.git
+  `git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name`
 
 2. Build the Docker Image
     Make sure Docker Desktop is installed and running.
 
     Then build the image using:
-`docker build --platform linux/amd64 -t mysolutionname:somerandomidentifier` .
-- mysolutionname can be your project name (e.g., pdf-title-extractor)
-- somerandomidentifier can be a version tag (e.g., v1)
+      - `docker build --platform linux/amd64 -t mysolutionname:somerandomidentifier` .
+      -  mysolutionname can be your project name (e.g., pdf-title-extractor)
+      -  somerandomidentifier can be a version tag (e.g., v1)
 
 3. Prepare Input and Output Folders
-Inside the root of the repo:
+- Inside the root of the repo:
 `mkdir input`
 `mkdir output`
 - Put your test PDF files inside the input/ folder.
@@ -128,14 +128,14 @@ Inside the root of the repo:
 - You can also use the sample PDFs from sample_dataset/pdfs/ by copying them:
 `cp sample_dataset/pdfs/*.pdf input/`
 4. Run the Docker Container
-- On Linux/macOS or Git Bash:
+  -  On Linux/macOS or Git Bash:
 `docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none pdf-title-extractor:v1'
-- On Windows PowerShell:
+  -  On Windows PowerShell:
 `docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output --network none pdf-title-extractor:v1`
 5. View the Output
-- After the run finishes:
-    -   Check the output/ folder.
-    -   You should see the extracted headings or results in JSON or other format.
+  - After the run finishes:
+      -   Check the output/ folder.
+      -   You should see the extracted headings or results in JSON or other format.
 
 ## Results:
 ### Performance metrics
