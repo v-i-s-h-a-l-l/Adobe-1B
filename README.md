@@ -119,23 +119,23 @@ cd your-repo-name`
       -  somerandomidentifier can be a version tag (e.g., v1)
 
 3. Prepare Input and Output Folders
-- Inside the root of the repo:
-`mkdir input`
-`mkdir output`
-- Put your test PDF files inside the input/ folder.
-- The model will write results to the output/ folder.
+   - Inside the root of the repo:
+      `mkdir input`
+      `mkdir output`
+    - Put your test PDF files inside the input/ folder.
+    - The model will write results to the output/ folder.
 
-- You can also use the sample PDFs from sample_dataset/pdfs/ by copying them:
-`cp sample_dataset/pdfs/*.pdf input/`
+    - You can also use the sample PDFs from sample_dataset/pdfs/ by copying them:
+      `cp sample_dataset/pdfs/*.pdf input/`
 4. Run the Docker Container
-  -  On Linux/macOS or Git Bash:
+    - On Linux/macOS or Git Bash:
 `docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none pdf-title-extractor:v1'
-  -  On Windows PowerShell:
+    -  On Windows PowerShell:
 `docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output --network none pdf-title-extractor:v1`
 5. View the Output
-  - After the run finishes:
-      -   Check the output/ folder.
-      -   You should see the extracted headings or results in JSON or other format.
+    - After the run finishes:
+        -   Check the output/ folder.
+        -   You should see the extracted headings or results in JSON or other format.
 
 ## Results:
 ### Performance metrics
@@ -143,43 +143,12 @@ cd your-repo-name`
 
 
 ### Input json 
-{
-  "persona": {
-    "role": "Travel Planner"
-  },
-  "job_to_be_done": {
-    "task": "Find family-friendly locations in the South of France"
-  },
-  "documents": [
-    { "filename": "guide1.pdf", "title": "Family Guide" },
-    { "filename": "guide2.pdf", "title": "Local Attractions" }
-  ]
-}
+<img width="789" height="355" alt="image" src="https://github.com/user-attachments/assets/23b318c2-76e5-4b18-961c-da4f6f1f6853" />
+
 
 ### Output json
-{
-  "metadata": {
-    "input_documents": ["guide1.pdf", "guide2.pdf"],
-    "persona": "Travel Planner",
-    "job_to_be_done": "Find family-friendly locations in the South of France",
-    "processing_timestamp": "2025-07-27T12:34:56.000000"
-  },
-  "extracted_sections": [
-    {
-      "document": "guide1.pdf",
-      "section_title": "TOP FAMILY DESTINATIONS",
-      "importance_rank": 1,
-      "page_number": 3
-    }
-  ],
-  "subsection_analysis": [
-    {
-      "document": "guide1.pdf",
-      "refined_text": "This region is known for its kid-friendly beaches...",
-      "page_number": 3
-    }
-  ]
-}
+<img width="807" height="589" alt="image" src="https://github.com/user-attachments/assets/751cb479-c4ec-4a03-a3ef-0a184b426c51" />
+
 
 ## Authors
 
