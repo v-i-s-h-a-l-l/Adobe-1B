@@ -15,14 +15,13 @@ In this part it combines semantic search, heading detection, and structured outp
 
 - 🧾 Heading Detection — Identifies and extracts structured headings and outlines to make navigation easier.
 
-- 🌐 Multilingual Support — Uniquely capable of analyzing PDFs written in multiple languages.
-
 - 📦 Structured Output — Exports results in clean, machine-readable JSON format for downstream tasks like summarization, recommendation, or integration with AI systems.
 
 Whether you're filtering through academic papers, technical manuals, travel guides, or multilingual reports, DocuMind AI turns document overload into actionable insight.
 
 ## 🗺️ Roadmap
-<img width="410" height="724" alt="image" src="https://github.com/user-attachments/assets/e67de6b5-479b-4dd5-a496-d63b8c790a26" />
+![WhatsApp Image 2025-07-28 at 15 34 12_9bc718ff](https://github.com/user-attachments/assets/f9726335-d546-4f3c-8805-36dd7444a06d)
+
 
 - Accepts one or more document collections, where each collection includes:
 
@@ -83,19 +82,7 @@ Whether you're filtering through academic papers, technical manuals, travel guid
 
 - The highest-matching section(s) are selected based on similarity score.
 ### 📁 Folder Structure
-  project-root/
-- ├── Collection_1/
-- │ ├── PDFs/
-│ ├── challenge1b_input.json
-│ └── challenge1b_output.json # (Auto-generated)
-├── Collection_2/
-│ ├── ...
-├── models/
-│ └── sentence-transformers/
-│ └── multi-qa-MiniLM-L6-cos-v1/
-├── process_collections.py
-├── requirements.txt
-└── README.md
+![WhatsApp Image 2025-07-28 at 16 01 02_f1931a65](https://github.com/user-attachments/assets/d8cb5fc4-d1f4-43fa-a514-d7631d74c367)
 
 
 ###  Use Case Examples
