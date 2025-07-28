@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "input_documents": [
+      "South of France - Cities.pdf",
+      "South of France - Cuisine.pdf",
+      "South of France - History.pdf",
+      "South of France - Restaurants and Hotels.pdf",
+      "South of France - Things to Do.pdf",
+      "South of France - Tips and Tricks.pdf",
+      "South of France - Traditions and Culture.pdf"
+    ],
+    "persona": "Travel Planner",
+    "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
+    "processing_timestamp": "2025-07-28T17:40:18.787082"
+  },
+  "extracted_sections": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "section_title": "",
+      "importance_rank": 1,
+      "page_number": 8
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "section_title": "",
+      "importance_rank": 2,
+      "page_number": 10
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "section_title": "Water Sports",
+      "importance_rank": 3,
+      "page_number": 2
+    },
+    {
+      "document": "South of France - History.pdf",
+      "section_title": "",
+      "importance_rank": 4,
+      "page_number": 10
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "section_title": "Budget-Friendly Hotels",
+      "importance_rank": 5,
+      "page_number": 8
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "section_title": "Christmas Traditions",
+      "importance_rank": 6,
+      "page_number": 4
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "section_title": "",
+      "importance_rank": 7,
+      "page_number": 1
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "South of France - Tips and Tricks.pdf",
+      "refined_text": "\u2022 Notebook: Bring a notebook to jot down notes about the wines you taste. \u2022 Water Bottle: Stay hydrated by drinking water between tastings. \u2022 Additional Tips: Plan your wine tour route in advance and consider hiring a driver or joining a guided tour to avoid drinking and driving. Tips and Tricks for Packing \u2022 Check the Weather: Check the forecast before packing to ensure appropriate clothing. \u2022 Make a Packing List: Create a list to ensure nothing is forgotten. Cross off items as you pack. \u2022 Use Packing Cubes: Organize clothes and maximize space. \u2022 Roll Your Clothes: Save space and reduce wrinkles. \u2022 Pack Dual-Purpose Items: Choose items that serve multiple purposes. \u2022 Wear Bulky Items: Wear bulky items like coats or boots during travel to save suitcase space. \u2022 Pack a Day Bag: Bring a small day bag for daily excursions. \u2022 Leave Room for Souvenirs: Leave extra space or bring a foldable bag for souvenirs. \u2022 Additional Tips: Pack a small travel umbrella, a reusable shopping bag, and a portable phone charger. Consider using a luggage scale to avoid overweight baggage fees.",
+      "page_number": 8
+    },
+    {
+      "document": "South of France - Cities.pdf",
+      "refined_text": "Montpellier: A University City with Medieval Charm",
+      "page_number": 10
+    },
+    {
+      "document": "South of France - Things to Do.pdf",
+      "refined_text": "\u2022 Cannes, Nice, and Saint-Tropez: Try jet skiing or parasailing for a thrill. \u2022 Toulon: Dive into the underwater world with scuba diving excursions to explore wrecks. \u2022 Cerb\u00e8re-Banyuls: Visit the marine reserve for an unforgettable diving experience. \u2022 Mediterranean Coast: Charter a yacht or join a sailing tour to explore the coastline and nearby islands. \u2022 Marseille: Go windsurfing or kitesurfing in the windy bays. \u2022 Port Grimaud: Rent a paddleboard and explore the canals of this picturesque village. \u2022 La Ciotat: Try snorkeling in the clear waters around the \u00cele Verte.",
+      "page_number": 2
+    },
+    {
+      "document": "South of France - History.pdf",
+      "refined_text": "Montpellier: A University City with Medieval Charm Montpellier, founded in the 10th century, is known for its prestigious university and vibrant cultural scene. The city has a rich history, with a blend of medieval, Renaissance, and modern architecture. Key Historical Sites in Montpellier \u2022 Place de la Com\u00e9die: The central square of Montpellier, this bustling area is surrounded by cafes, shops, and the impressive Op\u00e9ra Com\u00e9die. It is a great place to start exploring the city. \u2022 Saint-Pierre Cathedral: This Gothic cathedral, built in the 14th century, is known for its imposing facade and twin towers. It is the seat of the Archdiocese of Montpellier. \u2022 Promenade du Peyrou: This 17th-century promenade offers stunning views of the city and features the Arc de Triomphe and the Ch\u00e2teau d'Eau, a beautiful water tower. \u2022 Mus\u00e9e Fabre: One of the most important art museums in France, the Mus\u00e9e Fabre houses an extensive collection of European paintings, sculptures, and decorative arts. \u2022 University of Montpellier: Founded in 1289, it is one of the oldest universities in the world and has been a center of learning and culture for centuries. \u2022 Jardin des Plantes: Established in 1593, it is the oldest botanical garden in France and was created for the study of medicinal plants.",
+      "page_number": 10
+    },
+    {
+      "document": "South of France - Restaurants and Hotels.pdf",
+      "refined_text": "\u2022 Ibis Budget Nice Californie Lenval (Nice): A budget-friendly hotel offering comfortable rooms and easy access to the beach and city center. The modern amenities and convenient location make it a great choice for budget-conscious travelers. \u2022 Hotel Le Saint Paul (Nice): A charming hotel located in a historic building, offering affordable rates and beautiful views of the Mediterranean. The cozy rooms and friendly service make it a pleasant stay. \u2022 Hotel des Arts (Montpellier): A budget-friendly hotel located in the heart of Montpellier, offering comfortable rooms and easy access to the city's attractions. The artistic decor and central location make it a popular choice. \u2022 Hotel Le Mistral (Marseille): A budget-friendly hotel offering simple, clean rooms and a convenient location near the Old Port. The friendly staff and affordable rates make it a good option for travelers on a budget. \u2022 Hotel Azur (Nice): A budget-friendly hotel offering comfortable rooms and easy access to the beach and city center. The modern amenities and convenient location make it a great choice for budget-conscious travelers. \u2022 Hotel de la Paix (Marseille): A budget-friendly hotel offering simple, clean rooms and a convenient location near the Old Port. The friendly staff and affordable rates make it a good option for travelers on a budget. \u2022 Hotel du Palais (Montpellier): A budget-friendly hotel located in the heart of Montpellier, offering comfortable rooms and easy access to the city's attractions. The artistic decor and central location make it a popular choice. \u2022 Hotel de la Mer (Nice): A budget-friendly hotel offering comfortable rooms and easy access to the beach and city center. The modern amenities and convenient location make it a great choice for budget-conscious travelers. \u2022 Hotel de la Plage (Marseille): A budget-friendly hotel offering simple, clean rooms and a convenient location near the Old Port. The friendly staff and affordable rates make it a good option for travelers on a budget. \u2022 Hotel de la Gare (Montpellier): A budget-friendly hotel located in the heart of Montpellier, offering comfortable rooms and easy access to the city's attractions. The artistic decor and central location make it a popular choice.",
+      "page_number": 8
+    },
+    {
+      "document": "South of France - Traditions and Culture.pdf",
+      "refined_text": "Christmas in Provence is marked by unique traditions that reflect the region's cultural heritage. One of the most distinctive customs is the \"13 Desserts,\" a feast of thirteen different sweets served after Midnight Mass on Christmas Eve. The number represents Jesus and the twelve apostles. Another tradition is the \"santon\" figurines, which are handcrafted clay figures",
+      "page_number": 4
+    },
+    {
+      "document": "South of France - Cuisine.pdf",
+      "refined_text": "A Culinary Journey Through the South of France",
+      "page_number": 1
+    }
+  ]
+}

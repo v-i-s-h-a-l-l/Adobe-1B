@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Breakfast Ideas.pdf",
+      "Dinner Ideas - Mains_1.pdf",
+      "Dinner Ideas - Mains_2.pdf",
+      "Dinner Ideas - Mains_3.pdf",
+      "Dinner Ideas - Sides_1.pdf",
+      "Dinner Ideas - Sides_2.pdf",
+      "Dinner Ideas - Sides_3.pdf",
+      "Dinner Ideas - Sides_4.pdf",
+      "Lunch Ideas.pdf"
+    ],
+    "persona": "Food Contractor",
+    "job_to_be_done": "Prepare a vegetarian buffet-style dinner menu for a corporate gathering, including gluten-free items.",
+    "processing_timestamp": "2025-07-28T17:52:24.384365"
+  },
+  "extracted_sections": [
+    {
+      "document": "Lunch Ideas.pdf",
+      "section_title": "Instructions:",
+      "importance_rank": 1,
+      "page_number": 14
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "section_title": "Instructions:",
+      "importance_rank": 2,
+      "page_number": 16
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "section_title": "Instructions:",
+      "importance_rank": 3,
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "section_title": "Instructions:",
+      "importance_rank": 4,
+      "page_number": 5
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "section_title": "Ingredients:",
+      "importance_rank": 5,
+      "page_number": 6
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "section_title": "\u2022 Instructions:",
+      "importance_rank": 6,
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "section_title": "\u2022 Instructions:",
+      "importance_rank": 7,
+      "page_number": 14
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "section_title": "\u2022 Instructions:",
+      "importance_rank": 8,
+      "page_number": 14
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "section_title": "\u2022 Instructions:",
+      "importance_rank": 9,
+      "page_number": 11
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Lunch Ideas.pdf",
+      "refined_text": "\u2022 In a bowl, combine the mashed chickpeas, spinach, carrots, tahini, and lemon juice. \u2022 Season with salt and pepper. \u2022 Lay the tortilla flat and spread the mixture evenly. \u2022 Roll up the tortilla tightly and slice in half. Turkey and Apple Sandwich",
+      "page_number": 14
+    },
+    {
+      "document": "Breakfast Ideas.pdf",
+      "refined_text": "\u2022 In a bowl, combine cottage cheese, cucumber, cherry tomatoes, and bell pepper. \u2022 Season with salt and pepper. \u2022 Serve immediately. Almond Butter and Apple Slices",
+      "page_number": 16
+    },
+    {
+      "document": "Dinner Ideas - Mains_2.pdf",
+      "refined_text": "\u2022 In a large skillet, heat olive oil over medium heat. \u2022 Add zucchini noodles and cook until tender. \u2022 Stir in basil pesto and cherry tomatoes. \u2022 Season with salt and pepper. \u2022 Sprinkle with grated Parmesan cheese and serve. Beef and Broccoli",
+      "page_number": 7
+    },
+    {
+      "document": "Dinner Ideas - Mains_1.pdf",
+      "refined_text": "\u2022 In a skillet, cook ground beef over medium heat until browned. \u2022 Add diced onion and minced garlic, saut\u00e9 until softened. \u2022 Stir in taco seasoning and water, simmer until thickened. \u2022 Serve beef mixture in taco shells or tortillas with desired toppings.",
+      "page_number": 5
+    },
+    {
+      "document": "Dinner Ideas - Mains_3.pdf",
+      "refined_text": "\u2022 2 pounds pork ribs \u2022 1/4 cup honey \u2022 1/4 cup soy sauce \u2022 2 tablespoons rice vinegar \u2022 3 cloves garlic, minced \u2022 1 teaspoon grated ginger \u2022 1 teaspoon paprika \u2022 Salt and pepper to taste \u2022 Sliced green onions for garnish",
+      "page_number": 6
+    },
+    {
+      "document": "Dinner Ideas - Sides_1.pdf",
+      "refined_text": "o Arrange meats, cheeses, olives, and vegetables on a platter. o Serve with breadsticks.",
+      "page_number": 3
+    },
+    {
+      "document": "Dinner Ideas - Sides_3.pdf",
+      "refined_text": "o Slice cucumbers thinly. o Mix minced garlic, soy sauce, sesame oil, gochugaru, and sesame seeds in a bowl. o Toss cucumbers with the dressing. o Serve chilled.",
+      "page_number": 14
+    },
+    {
+      "document": "Dinner Ideas - Sides_2.pdf",
+      "refined_text": "o Dice tomatoes and cucumber, slice red onion. o Mix vegetables with olives and crumbled feta cheese. o Whisk olive oil, vinegar, oregano, and salt, then pour over salad. o Toss well and serve.",
+      "page_number": 14
+    },
+    {
+      "document": "Dinner Ideas - Sides_4.pdf",
+      "refined_text": "o Dice tomatoes and cucumber, slice red onion. o Blanch green beans until tender. o Arrange tomatoes, cucumber, onion, green beans, olives, and tuna on a plate. o Quarter hard-boiled eggs and add to the salad. o Whisk olive oil, vinegar, mustard, and salt, then drizzle over the salad. o Toss gently and serve.",
+      "page_number": 11
+    }
+  ]
+}
