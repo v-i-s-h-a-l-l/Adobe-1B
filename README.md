@@ -129,7 +129,7 @@ cd your-repo-name`
       `cp sample_dataset/pdfs/*.pdf input/`
 4. Run the Docker Container
     - On Linux/macOS or Git Bash:
-`docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none pdf-title-extractor:v1'
+`docker run --rm -v $(pwd)/input:/app/input -v $(pwd)/output:/app/output --network none pdf-title-extractor:v1`
     -  On Windows PowerShell:
 `docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output --network none pdf-title-extractor:v1`
 5. View the Output
