@@ -10,7 +10,6 @@ from sentence_transformers import SentenceTransformer, util
 model_path = "./models/sentence-transformers/multi-qa-MiniLM-L6-cos-v1"
 model = SentenceTransformer(model_path)
 
-
 def extract_paragraphs(pdf_path):
     all_paragraphs = []
     with pdfplumber.open(pdf_path) as pdf:
@@ -23,31 +22,32 @@ def extract_paragraphs(pdf_path):
             for line in lines:
                 if line.isupper() or (len(line.split()) <= 6 and line == line.title()):
                     if current_para:
-                        all_paragraphs.append(
-                            {
-                                "title": current_title,
-                                "text": current_para.strip(),
-                                "page_number": page_num,
-                            }
-                        )
+                        all_paragraphs.append({
+                            "title": current_title,
+                            "text": current_para.strip(),
+                            "page_number": page_num
+                        })
                         current_para = ""
                     current_title = line.strip()
                 else:
                     current_para += " " + line
             if current_para:
-                all_paragraphs.append(
-                    {
-                        "title": current_title,
-                        "text": current_para.strip(),
-                        "page_number": page_num,
-                    }
-                )
+                all_paragraphs.append({
+                    "title": current_title,
+                    "text": current_para.strip(),
+                    "page_number": page_num
+                })
     return all_paragraphs
-
 
 def process_collection(collection_path):
     input_file = os.path.join(collection_path, "challenge1b_input.json")
     output_file = os.path.join(collection_path, "challenge1b_output.json")
+
+    print(f"[📂] Processing: {collection_path}")
+
+    if not os.path.exists(input_file):
+        print(f"[⚠] Skipping — input JSON not found: {input_file}")
+        return
 
     with open(input_file, "r", encoding="utf-8") as f:
         input_data = json.load(f)
@@ -59,7 +59,7 @@ def process_collection(collection_path):
 
     all_candidates = []
     for doc in input_documents:
-        pdf_path = os.path.join(collection_path, "PDFs", doc)
+        pdf_path = os.path.join(collection_path, doc)
         if not os.path.exists(pdf_path):
             print(f"[❌] Missing PDF: {pdf_path}")
             continue
@@ -67,6 +67,10 @@ def process_collection(collection_path):
         for para in paras:
             para["document"] = doc
             all_candidates.append(para)
+
+    if not all_candidates:
+        print(f"[⚠] No valid paragraphs extracted from PDFs in {collection_path}")
+        return
 
     job_embedding = model.encode(task, convert_to_tensor=True)
     grouped_by_doc = defaultdict(list)
@@ -89,31 +93,27 @@ def process_collection(collection_path):
     subsection_analysis = []
 
     for rank, para in enumerate(selected_chunks, 1):
-        extracted_sections.append(
-            {
-                "document": para["document"],
-                "section_title": para["title"],
-                "importance_rank": rank,
-                "page_number": para["page_number"],
-            }
-        )
-        subsection_analysis.append(
-            {
-                "document": para["document"],
-                "refined_text": para["text"],
-                "page_number": para["page_number"],
-            }
-        )
+        extracted_sections.append({
+            "document": para["document"],
+            "section_title": para["title"],
+            "importance_rank": rank,
+            "page_number": para["page_number"]
+        })
+        subsection_analysis.append({
+            "document": para["document"],
+            "refined_text": para["text"],
+            "page_number": para["page_number"]
+        })
 
     output_json = {
         "metadata": {
             "input_documents": input_documents,
             "persona": persona,
             "job_to_be_done": task,
-            "processing_timestamp": datetime.now().isoformat(),
+            "processing_timestamp": datetime.now().isoformat()
         },
         "extracted_sections": extracted_sections,
-        "subsection_analysis": subsection_analysis,
+        "subsection_analysis": subsection_analysis
     }
 
     with open(output_file, "w", encoding="utf-8") as f:
@@ -121,14 +121,14 @@ def process_collection(collection_path):
 
     print(f"[✅] Output written to {output_file}")
 
-
 def main():
     base_dir = os.getcwd()
+    print(f"[ℹ] Searching collections in: {base_dir}")
     for folder in os.listdir(base_dir):
         collection_path = os.path.join(base_dir, folder)
-        if os.path.isdir(collection_path) and folder.startswith("Collection"):
+        normalized = folder.lower().replace(" ", "")
+        if os.path.isdir(collection_path) and normalized.startswith("collection"):
             process_collection(collection_path)
 
-
-if __name__ == "__main__":
-    main()
+if _name_ == "_main_":
+    main()
