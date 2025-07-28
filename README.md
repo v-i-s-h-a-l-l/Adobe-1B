@@ -5,6 +5,7 @@
 DocuMind AI – Semantic PDF & Heading Extractor is an advanced document intelligence pipeline designed to simplify the processing and understanding of large, complex PDFs.
 
 In this part it combines semantic search, heading detection, and structured output generation to help users — whether students, researchers, or professionals — extract meaningful content quickly based on a specified persona and job-to-be-done.
+`output perfectly works with the ipynb file added in the repo it's output is in the Outputs folder in the repository `
 ## 👤who it is for?
 - Students 
 - Professional
