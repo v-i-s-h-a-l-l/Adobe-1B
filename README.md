@@ -1,12 +1,12 @@
 # DocuMind AI- ML Powered Document Outline Extractor
 
 ![WhatsApp Image 2025-07-27 at 23 02 43_6c90f94c](https://github.com/user-attachments/assets/e354f825-b22b-4b2d-a5ba-d08c25218396)
-
+## 🧐 What is this?
 DocuMind AI – Semantic PDF & Heading Extractor is an advanced document intelligence pipeline designed to simplify the processing and understanding of large, complex PDFs.
 
 In this part it combines semantic search, heading detection, and structured output generation to help users — whether students, researchers, or professionals — extract meaningful content quickly based on a specified persona and job-to-be-done.
-
-✨ Key Capabilities
+## 👤who it is for?
+## ✨ Key Capabilities
 - 🔍 Semantic Understanding — Automatically finds the most relevant section of each document by comparing content to user-defined tasks using a transformer-based model.
 
 - 🧾 Heading Detection — Identifies and extracts structured headings and outlines to make navigation easier.
@@ -47,7 +47,7 @@ Whether you're filtering through academic papers, technical manuals, travel guid
       - Rank (relevance score)
 
       - Document ID / file name
-### Ml model used
+### 👨‍🏫📉🤖 Ml model used
   The core model powering semantic understanding in this project is sentence-transformers/multi-qa-MiniLM-L6-cos-v1, a lightweight yet high-performance transformer fine-tuned for semantic search and question-answering tasks.
 
   `sentence-transformers/multi-qa-MiniLM-L6-cos-v1` from the Sentence-Transformers library
@@ -78,7 +78,7 @@ Whether you're filtering through academic papers, technical manuals, travel guid
 - Cosine similarity is used to compare the query with document sections.
 
 - The highest-matching section(s) are selected based on similarity score.
-### Folder Structure
+### 📁 Folder Structure
   project-root/
 ├── Collection_1/
 │ ├── PDFs/
